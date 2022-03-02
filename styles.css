@@ -1,56 +1,84 @@
-@import url(https://fonts.google.com/specimen/Lexend+Deca);
-@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@300&display=swap');
 
 
-.card{
+.card1{
     background-color: hsl(31, 77%, 52%);
-    border-radius: 10px;
-    max-width:300px;
-    height: 500px;
-    margin:auto;
+    border-radius: 10px 10px 0 0;
+    
 }
 
 .img{
-    margin-left: 40px;
+    margin-left: 30px;
     padding-top:40px;
 }
 
 .type{
-    margin-left:40px;
-    color: hsla(0, 0%, 100%, 0.75);
+    margin-left:30px;
+    color: white;
     margin-top:30px;
     margin-bottom:30px;
-     
+    font-family: "Big shoulders display" , sans-serif;
+    font-size:35px;
 }
 .p_text{
     color: hsla(0, 0%, 100%, 0.75);
     font-size:15px;
     line-height: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size:1.2rem;
+    font-family: "Lexend Deca" , sans-serif;
 }
 
 .card2{
     background-color: hsl(184, 100%, 22%);
-    border-radius: 10px;
-    max-width:300px;
-    height: 500px;
-    margin:auto;
+    border-radius: 0 0 0 0;
+    
 }
 .card3{
     background-color: hsl(179, 100%, 13%);
-    border-radius: 10px;
-    max-width:300px;
-    height: 500px;
-    margin:auto;
+    border-radius: 0 0 10px 10px;
+}
+.section{
+    margin: 10% auto;
+    display:grid;
+    max-width:65%;
 }
 
-@media(min-width:900px){
+@media(min-width:1000px){
     .section{
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        max-width:785px;
-        margin:auto;
+        display: grid;
+        grid-template-columns : 1fr 1fr 1fr ;
+        margin: 10% auto;
     }
+   .card1{
+       border-radius:10px 0 0 10px;
+   }
+   .card2{
+       border-radius: 0 0 0 0;
+   }
+   .card3{
+       border-radius: 0 10px 10px 0;
+   }
 }
+
+.button_learn{
+    border-radius:25px;
+    font-weight:bold;
+    font-family: "Lexend Deca" , sans-serif;
+    margin-left:25px;
+    margin-top:40px;
+    margin-bottom: 40px;
+    width:150px;
+    height:50px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.button_learn:hover{
+    background-color:transparent;
+    color:white;
+    transition:0.2s;
+}
+
 
