@@ -45,7 +45,7 @@
     max-width:65%;
 }
 
-@media(min-width:1000px){
+@media(min-width:1200px){
     .section{
         display: grid;
         grid-template-columns : 1fr 1fr 1fr ;
